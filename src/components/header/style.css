@@ -1,0 +1,60 @@
+.navbar {
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.gradient {
+    position: absolute;
+    width: 50%;
+    min-width: 400px;
+    height: 180px;
+    top: -160px;
+    background: #18b2de;
+    filter: blur(100px);
+    z-index: -100;
+}
+
+.logo{
+    font-size: 1.8rem;
+    font-weight: 900;
+    background-image: var(--logo);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+}
+
+.link {
+    color: #8ea6bb;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.link:hover {
+    color: var(--white) !important;
+}
+
+.link.active {
+    color: var(--white) !important;
+}
+
+
+@media (max-width: 500px){
+    .navbar {
+        gap: 1rem;
+    }
+    .logo{
+        font-size: 1.3rem;
+    }
+}

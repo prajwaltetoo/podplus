@@ -1,0 +1,17 @@
+.fallback-ui{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(61, 60, 60);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media (max-width: 500px){
+    .fallback-ui{
+        font-size: 1.5rem;
+    }
+}

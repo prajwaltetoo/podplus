@@ -1,0 +1,51 @@
+.custom-button {
+    padding: .8rem 1rem;
+    border: 2px solid var(--white);
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+    /* margin: 1rem; */
+    /* width: 80%; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    border-radius: 0.3rem;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.custom-button:hover {
+    background-color: var(--white);
+    color: var(--theme);
+}
+
+.play-button {
+    padding: .6rem;
+    border: 2px solid var(--white);
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.3rem;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.play-button svg{
+    width: 1.2rem!important;
+    height: 1.2rem!important;
+}
+
+.play-button:hover {
+    background-color: var(--white);
+    color: var(--theme);
+}

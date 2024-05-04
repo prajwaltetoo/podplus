@@ -1,0 +1,84 @@
+.multi-select {
+    border: 2px solid var(--purple-grey);
+    border-radius: 0.3rem;
+    padding-inline: 1rem 0;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+}
+.focused{
+    border-color: var(--white)!important;
+}
+.selected-box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .4rem;
+    overflow-x: auto;
+}
+.selected-option{
+    background: var(--card-2);
+    border-radius: .8rem;
+    border: none;
+    padding: .3rem .3rem .3rem .5rem;
+    font-size: .6rem;
+    font-weight: 500;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+.selected-option>svg{
+    align-self: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.multi-select input{
+    flex: 1;
+    padding-right: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: transparent;
+    color: var(--white);
+    margin: .8rem 0;
+    border: none;
+    outline: none;
+}
+
+.multi-select input::placeholder{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.dropdown{
+    width: calc(100% + 4px);
+    height: 8rem;
+    overflow-y: auto;
+    position: absolute;
+    left: -2px;
+    top: 120%;
+    z-index: 2;
+    color: var(--white);
+    background: var(--card-2);
+    box-shadow: 0 0 2px var(--purple-grey);
+    border-radius: 0.3rem;
+    padding: .8rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+.dropdown ::-webkit-scrollbar{
+    display: block!important;
+}
+
+.option{
+    cursor: pointer;
+    padding: .1rem 0;
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+::-webkit-scrollbar{
+  display: none; 
+}
+
+:root {
+  --theme: #20062e;
+  /* --modal: #3e0e58; */
+  --modal: linear-gradient(177.7deg, #3e0e58 1.63%, #20042f 148.18%);
+  --card: linear-gradient(177.7deg, rgba(58, 129, 191, 0.3) 1.63%, rgba(65, 48, 90, 0.009) 148.18%);
+  /* --player: linear-gradient(177.7deg, rgba(58, 129, 191) 1.63%, rgba(65, 48, 90) 148.18%); */
+  --card-2: linear-gradient(177.7deg, rgba(58, 129, 191) 1.63%, rgba(65, 48, 90) 148.18%);
+  /* --logo: linear-gradient(177.7deg, rgb(196, 149, 254) 1.63%, rgb(114, 98, 139) 148.18%); */
+  --blue: #18b2de;
+  --white: #fff;
+  --grey: #d7d7d7;
+  --purple-grey: #8f8297;
+  --gray: rgb(175, 174, 174);
+}
+
+body {
+  /* margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  background-color: var(--theme);
+  color: var(--white);
+}
+
+
+
+
+
+@media (max-width: 768px){
+  html{
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px){
+  html{
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px){
+  html{
+    font-size: 11px;
+  }
+}

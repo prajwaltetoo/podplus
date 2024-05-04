@@ -1,0 +1,48 @@
+.custom-input {
+    border: 2px solid var(--purple-grey);
+    border-radius: 0.3rem;
+    padding: .8rem 1rem;
+    color: var(--white);
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.custom-input::placeholder {
+    color: var(--purple-grey);
+}
+
+.custom-input:focus {
+    outline: none;
+    border-color: var(--white);
+    transition: all .4s;
+}
+
+.custom-input-file-button {
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    padding: .8rem 1rem;
+    border: 3px dashed var(--purple-grey);
+    color: var(--purple-grey);
+}
+
+.custom-input-file-button:hover {
+    border: 3px dashed var(--white);
+    color: var(--white);
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.custom-input-file-button span{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+}
+
+.selected{
+    border: 3px dashed var(--white);
+    color: var(--white);
+}
